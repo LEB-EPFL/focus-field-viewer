@@ -33,6 +33,8 @@ NOLL_INDICES = list(NOLL_NAMES.keys())
 POLARIZATION_LABELS = {
     Polarization.LINEAR_X: "Linear, X",
     Polarization.LINEAR_Y: "Linear, Y",
+    Polarization.LINEAR_PLUS_45: "Linear, +45°",
+    Polarization.LINEAR_MINUS_45: "Linear, -45°",
     Polarization.CIRCULAR_LEFT: "Circular, left",
     Polarization.CIRCULAR_RIGHT: "Circular, right",
 }
@@ -102,7 +104,7 @@ def compute(
     if any(c != 0.0 for c in zernike_coefficients):
         inputs = inputs.with_zernike_modes(NOLL_INDICES, list(zernike_coefficients))
 
-    results = pupil.propgate(0.0, inputs, padding_factor=padding_factor)
+    results = pupil.propagate(0.0, inputs, padding_factor=padding_factor)
     return pupil, inputs, results
 
 
