@@ -37,11 +37,11 @@
 
         just-focus = python3.pkgs.buildPythonPackage {
           pname = "just_focus";
-          version = "2.0.0";
+          version = "3.0.1";
           format = "wheel";
           src = pkgs.fetchurl {
-            url = "https://files.pythonhosted.org/packages/f4/ab/dc064dbcfcdfd70b9f8534964245fe66c2eb8da9b8bbad99a6e1ca745c82/just_focus-2.0.0-py3-none-any.whl";
-            hash = "sha256-+4ZDWKd+jViylkEp2eRVsZW5YuXXA/I0oxlWKg7JsSc=";
+            url = "https://files.pythonhosted.org/packages/76/f1/2ccbd539ccff021e3f6c02f5a3060e2b8491284fe9fbe6666576626a6b05/just_focus-3.0.1-py3-none-any.whl";
+            hash = "sha256-TJs4glD1P47KXyXdz6cfehfBrWiLV8iZNlQ+8xLTaOQ=";
           };
           propagatedBuildInputs = [
             python3.pkgs.numpy

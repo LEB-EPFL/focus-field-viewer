@@ -172,7 +172,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "just-focus", extras = ["zernike"], specifier = ">=2.0.0" },
+    { name = "just-focus", extras = ["zernike"], specifier = ">=3.0.1" },
     { name = "matplotlib", specifier = ">=3.11.1" },
     { name = "streamlit", specifier = ">=1.61.1" },
 ]
@@ -327,14 +327,14 @@ wheels = [
 
 [[package]]
 name = "just-focus"
-version = "2.0.0"
+version = "3.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/08/e8/294e83336291b1086b5d3e20f37e13702c6642e8327d33596a98284d5003/just_focus-2.0.0.tar.gz", hash = "sha256:0193b731373e306bd87c04d9ac6bbcde86d0ba76cdb24bc405171fd64981c719", size = 5291938, upload-time = "2026-08-27T08:48:04.793Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/e4/9eaa7cd7bd6a8ac1450b3e7d2db457adf046ff1c75b145444284ab5896eb/just_focus-3.0.1.tar.gz", hash = "sha256:bb940d8d9872b09ab2ee150c36c5f71b339cf30dd5199aaae4c63d5e673a4150", size = 5483984, upload-time = "2026-11-17T07:42:57.425Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/ab/dc064dbcfcdfd70b9f8534964245fe66c2eb8da9b8bbad99a6e1ca745c82/just_focus-2.0.0-py3-none-any.whl", hash = "sha256:fb864358a77e8d58b2964129d9e455b195b962e5d703f234a319562a0ec9b127", size = 40572, upload-time = "2026-08-27T08:48:03.582Z" },
+    { url = "https://files.pythonhosted.org/packages/76/f1/2ccbd539ccff021e3f6c02f5a3060e2b8491284fe9fbe6666576626a6b05/just_focus-3.0.1-py3-none-any.whl", hash = "sha256:4c9b388250f53f8eca5f25ddcfa71f7a17c1ad688b57c89936543ef312d368e4", size = 40728, upload-time = "2026-11-17T07:42:55.843Z" },
 ]
 
 [package.optional-dependencies]
