@@ -6,6 +6,8 @@ Run with:
 
 """
 
+from importlib.metadata import version
+
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
@@ -158,6 +160,7 @@ def irradiance_panel(results, half_fov_um: float) -> Figure:
 
 st.set_page_config(page_title="Focus Field Viewer", layout="wide")
 st.title("Focus Field Viewer")
+st.caption(f"Powered by just-focus {version('just-focus')}")
 
 with st.sidebar:
     st.header("Model")
